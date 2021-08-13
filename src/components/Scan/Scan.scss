@@ -1,17 +1,22 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
-
+@use "../../partials/typography" as *;
 .scan-main {
-  border: 1px solid black;
   width: 91%;
   margin: auto;
   &__header {
     display: flex;
+    padding: 2.5rem 0 1.5rem 0;
     &--img {
       padding-left: 1rem;
     }
+    &--txt {
+      @include header;
+    }
   }
   &__container1 {
+    @include shadow;
+    height: 19.3125rem;
     background-color: $bg-alt;
     border-radius: 1.25rem;
     display: flex;
@@ -23,6 +28,14 @@
       display: flex;
       align-items: center;
     }
+    &--txt {
+      @include header;
+    }
+    &--text {
+      @include labels;
+      font-size: 1.4375rem;
+      padding-right: 2rem;
+    }
     &--img {
       border-top-left-radius: 1.25rem;
       height: 6.8125rem;
@@ -32,9 +45,43 @@
   }
   &__container2 {
     display: flex;
+    padding-bottom: 5rem;
     &--img {
       width: 85%;
       margin: auto;
     }
   }
+  &__points {
+    @include shadow;
+    background-color: $bg-alt;
+    height: 19.1875rem;
+    display: flex;
+    padding-left: 3rem;
+    border-radius: 1.25rem;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  &__points-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    @include body-copy;
+    &--colored-txt {
+      color: $accent;
+      color: red;
+      padding-right: 0.25rem;
+    }
+  }
+  &__img-wrapper {
+    padding: 0;
+    &--img {
+      padding-left: 6rem;
+      padding-top: 2rem;
+    }
+  }
+}
+
+.inner-wrap {
+  display: flex;
 }
