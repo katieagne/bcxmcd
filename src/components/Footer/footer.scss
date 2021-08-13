@@ -4,17 +4,18 @@
 
 .footer {
   background-color: $accent;
-  height: 309px;
   width: 100%;
 
   &__container {
     max-width: 1440px;
-    padding: 62px 125px 125px 87px;
+    padding: 60px 4rem;
+    margin: auto;
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 75px;
   }
 
   &__link {
@@ -24,5 +25,19 @@
 
   &__socials-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-icons {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 35px;
+
+    &--zero {
+      margin-right: 0px;
+    }
   }
 }

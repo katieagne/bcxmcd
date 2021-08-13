@@ -1,4 +1,5 @@
 import React from "react";
+import down from "../../assets/icons/down.svg";
 import cart from "../../assets/icons/cart.svg";
 import signout from "../../assets/icons/user.svg";
 import search from "../../assets/icons/search.svg";
@@ -15,7 +16,10 @@ function Navbar() {
       <div className="main">
         <div className="main__top">
           <div className="main__top--left">
-            <p className="main__top-txt">Language</p>
+            <div className="down-img">
+              <p className="main__top-txt">Language</p>
+              <img className="down-img__img" src={down} />
+            </div>
             <p className="main__top-txt">Newsletter</p>
             <p className="main__top-txt">Find Jobs</p>
             <p className="main__top-txt">Franchising</p>
@@ -33,7 +37,10 @@ function Navbar() {
           </div>
         </div>
         <div className="main__bottom">
-          <p className="main__bottom--inactive">Menu</p>
+          <div className="down-img">
+            <p className="main__bottom--inactive">Menu</p>
+            <img className="down-img__img" src={down} />
+          </div>
           <p className="main__bottom--inactive">Nutrition</p>
           <p className="main__bottom--active">Rewards</p>
           <p className="main__bottom--inactive">McCafe</p>

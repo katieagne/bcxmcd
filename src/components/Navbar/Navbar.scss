@@ -54,6 +54,13 @@ section {
   }
 }
 
+.down-img {
+  display: flex;
+  &__img {
+    padding-left: 0.25rem;
+  }
+}
+
 .main {
   width: 100%;
   display: flex;

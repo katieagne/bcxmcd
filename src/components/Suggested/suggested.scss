@@ -1,0 +1,18 @@
+@import "../../partials/mixins";
+@import "../../partials/typography";
+@import "../../partials/variables";
+
+.suggested {
+  width: 100%;
+
+  &__container {
+    width: 1440px;
+    margin: auto;
+    padding: 75px 4rem;
+  }
+
+  &__title {
+    @include header;
+    color: $text;
+  }
+}
