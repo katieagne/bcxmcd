@@ -13,6 +13,12 @@ const Footer = () => {
           <p className="footer__link">Get More McD's</p>
           <p className="footer__link">Contact Us</p>
         </div>
+        <div className="footer__socials-container">
+          <div className="footer__socials">
+            <div className="footer__social-icons"></div>
+          </div>
+          <div className="footer__app"></div>
+        </div>
       </div>
     </section>
   );

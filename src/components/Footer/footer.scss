@@ -9,14 +9,20 @@
 
   &__container {
     max-width: 1440px;
+    padding: 62px 125px 125px 87px;
   }
 
   &__links {
     display: flex;
+    justify-content: space-between;
   }
 
   &__link {
     @include labels;
     color: $text-light;
+  }
+
+  &__socials-container {
+    display: flex;
   }
 }
