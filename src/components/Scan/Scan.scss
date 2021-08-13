@@ -1,6 +1,25 @@
 @use "../../partials/variables" as *;
 @use "../../partials/mixins" as *;
 @use "../../partials/typography" as *;
+
+@keyframes hover {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: rotatex(90deg) scale(1.5);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .scan-main {
   width: 91%;
   margin: auto;
@@ -78,6 +97,7 @@
     &--img {
       padding-left: 6rem;
       padding-top: 2rem;
+      animation: hover 2s infinite;
     }
   }
 }
