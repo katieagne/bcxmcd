@@ -1,14 +1,23 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.scss";
-import Rewards from "./pages/Rewards/Rewards";
-import SecretMenu from "./components/SecretMenu/SecretMenu";
 import Navbar from "./components/Navbar/Navbar";
+import Rewards from "./pages/Rewards/Rewards";
+import Order from "./pages/Order/Order";
+import OrderPlaced from "./pages/OrderPlaced/OrderPlaced";
 import Footer from "./components/Footer/Footer";
-import Suggested from "./components/Suggested/Suggested";
 
 function App() {
   return (
     <div className="App">
-      <Rewards />
+      <Navbar />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Rewards} />
+          <Route exact path="/order" component={Order} />
+          <Route exact path="/order/placed" component={OrderPlaced} />
+        </Switch>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }
