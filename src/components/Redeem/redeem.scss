@@ -2,7 +2,7 @@
 @import "../../partials/typography";
 @import "../../partials/variables";
 
-.suggested {
+.redeem {
   width: 100%;
   overflow-x: hidden;
 
@@ -12,10 +12,21 @@
     padding: 75px 4rem;
   }
 
+  &__title-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
   &__title {
     @include header;
     color: $text;
     margin-bottom: 20px;
+    margin-right: 75px;
+  }
+
+  &__link {
+    @include labels;
+    text-decoration: underline;
   }
 
   &__card-container {
@@ -24,68 +35,64 @@
   }
 
   &__card {
-    width: 360px;
+    width: auto;
     height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 125px;
+    margin-right: 85px;
   }
   &__card-img {
-    background-image: url("../../assets/images/big-mac-meal.png");
+    background-image: url("../../assets/images/nuggets.png");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 360px;
-    width: 360px;
-    border-radius: 20px;
+    height: 255px;
+    width: 255px;
+    border-radius: 50%;
+    border: 18px solid $accent;
     margin-bottom: 18px;
   }
   &__card-img-b {
-    background-image: url("../../assets/images/filet-o-fish.png");
+    background-image: url("../../assets/images/fries.png");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 360px;
-    width: 360px;
-    border-radius: 20px;
+    height: 255px;
+    width: 255px;
+    border-radius: 50%;
+    border: 18px solid $accent;
     margin-bottom: 18px;
   }
   &__card-img-c {
-    background-image: url("../../assets/images/happy-meal.png");
+    background-image: url("../../assets/images/quarterpounder.png");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 360px;
-    width: 360px;
-    border-radius: 20px;
+    height: 255px;
+    width: 255px;
+    border-radius: 50%;
+    border: 18px solid $accent;
     margin-bottom: 18px;
   }
-
-  &__points {
-    @include labels;
-    background-color: $accent;
-    color: $text-light;
-    padding: 8px 75px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+  &__card-img-d {
+    background-image: url("../../assets/images/nuggets.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 255px;
+    width: 255px;
+    border-radius: 50%;
+    border: 18px solid $accent;
+    margin-bottom: 18px;
   }
-
   &__text {
     @include body-copy;
     color: $text;
-  }
-
-  &__btn {
-    @include labels;
-    @include shadow;
-    border: none;
-    padding: 24px 14px;
-    border-radius: 20px;
-    margin-top: 16px;
   }
 }

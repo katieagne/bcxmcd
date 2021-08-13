@@ -22,7 +22,7 @@ const Suggested = () => {
           </div>
           {/* card 2 */}
           <div className="suggested__card">
-            <div className="suggested__card-img">
+            <div className="suggested__card-img-b">
               <p className="suggested__points">2x points</p>
             </div>
             <p className="suggested__text">Big Mac Combo Meal</p>
@@ -34,7 +34,7 @@ const Suggested = () => {
           </div>
           {/* card 3 */}
           <div className="suggested__card">
-            <div className="suggested__card-img">
+            <div className="suggested__card-img-c">
               <p className="suggested__points">2x points</p>
             </div>
             <p className="suggested__text">Big Mac Combo Meal</p>
