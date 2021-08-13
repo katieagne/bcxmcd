@@ -1,0 +1,47 @@
+import React from "react";
+import cart from "../../assets/icons/cart.svg";
+import signout from "../../assets/icons/user.svg";
+import search from "../../assets/icons/search.svg";
+import McdsLogo from "../../assets/logos/McD-squareLogo 2.svg";
+import "./Navbar.scss";
+
+function Navbar() {
+  return (
+    <section>
+      <div className="img">
+        <img src={McdsLogo} alt="Mcdonald's Logo" />
+      </div>
+      <div className="main">
+        <div className="main__top">
+          <div className="main__top--left">
+            <p className="main__top-txt">Language</p>
+            <p className="main__top-txt">Newsletter</p>
+            <p className="main__top-txt">Find Jobs</p>
+            <p className="main__top-txt">Franchising</p>
+          </div>
+          <div className="main__top--right">
+            <div className="search">
+              <img src={search} />
+              <p className="search__txt">Search</p>
+            </div>
+            <div className="signout">
+              <img className="signout__img" src={signout} />
+              <p className="signout__txt">Sign Out</p>
+            </div>
+            <img className="singout__img2" src={cart} />
+          </div>
+        </div>
+        <div className="main__bottom">
+          <p>Menu</p>
+          <p>Nutrition</p>
+          <p>Rewards</p>
+          <p>McCafe</p>
+          <p>Family</p>
+          <p>Location</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Navbar;
