@@ -4,7 +4,7 @@ import cart from "../../assets/icons/cart.svg";
 import signout from "../../assets/icons/user.svg";
 import search from "../../assets/icons/search.svg";
 import location from "../../assets/icons/location.svg";
-import McdsLogo from "../../assets/logos/McD-squareLogo 2.svg";
+import McdsLogo from "../../assets/logos/MCDONALDS (1).png";
 import "./Navbar.scss";
 
 function Navbar() {
