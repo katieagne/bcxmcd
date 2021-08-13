@@ -1,12 +1,10 @@
 import "./App.scss";
-import Navbar from "./components/Navbar/Navbar";
-// import Footer from "./components/Footer/Footer";
+import Rewards from "./pages/Rewards/Rewards";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      {/* <Footer /> */}
+      <Rewards />
     </div>
   );
 }

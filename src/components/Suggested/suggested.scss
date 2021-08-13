@@ -4,9 +4,10 @@
 
 .suggested {
   width: 100%;
+  overflow-x: hidden;
 
   &__container {
-    width: 1440px;
+    width: 1312px;
     margin: auto;
     padding: 75px 4rem;
   }
@@ -14,22 +15,55 @@
   &__title {
     @include header;
     color: $text;
+    margin-bottom: 20px;
   }
 
   &__card-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
   }
 
   &__card {
     width: 360px;
     height: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 125px;
   }
   &__card-img {
-    @include shadow;
-    // background-image: url();
+    background-image: url("../../assets/images/big-mac-meal.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 360px;
+    width: 360px;
     border-radius: 20px;
+    margin-bottom: 18px;
+  }
+
+  &__points {
+    @include labels;
+    background-color: $accent;
+    color: $text-light;
+    padding: 8px 75px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  &__text {
+    @include body-copy;
+    color: $text;
+  }
+
+  &__btn {
+    @include labels;
+    @include shadow;
+    border: none;
+    padding: 24px 14px;
+    border-radius: 20px;
+    margin-top: 16px;
   }
 }
