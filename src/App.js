@@ -1,12 +1,12 @@
 import "./App.scss";
-import Footer from "./components/Footer/Footer";
-import Suggested from "./components/Suggested/Suggested";
+import Navbar from "./components/Navbar/Navbar";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Suggested />
-      <Footer />
+      <Navbar />
+      {/* <Footer /> */}
     </div>
   );
 }

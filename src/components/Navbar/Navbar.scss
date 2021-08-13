@@ -1,0 +1,110 @@
+@use "../../partials/typography" as *;
+@use "../../partials/variables" as *;
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $text;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 4rem 0 4rem;
+  @include nav;
+}
+.img {
+  height: 11rem;
+  width: 11rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__txt {
+    padding-left: 0.25rem;
+  }
+}
+
+.signout {
+  display: flex;
+  align-items: center;
+  border-right: 0.03125rem solid #db0006;
+  padding-right: 0.5rem;
+  padding: 0 1rem 0 1rem;
+  &__txt {
+    padding-left: 0.5rem;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    height: 1.75rem;
+    width: 1.375rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.down-img {
+  display: flex;
+  &__img {
+    padding-left: 0.25rem;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__top {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    @include nav;
+    &--left {
+      width: 53%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: $text;
+    }
+    &--right {
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem 0 1rem;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    height: 5.5rem;
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include menu;
+    &--active {
+      font-weight: 600;
+      height: 2rem;
+      border-bottom: 0.0625rem solid $accent;
+    }
+  }
+}
