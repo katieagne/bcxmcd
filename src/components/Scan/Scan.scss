@@ -1,0 +1,40 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.scan-main {
+  border: 1px solid black;
+  width: 91%;
+  margin: auto;
+  &__header {
+    display: flex;
+    &--img {
+      padding-left: 1rem;
+    }
+  }
+  &__container1 {
+    background-color: $bg-alt;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &--top-left {
+      display: flex;
+      align-items: center;
+    }
+    &--img {
+      border-top-left-radius: 1.25rem;
+      height: 6.8125rem;
+      width: 7.625rem;
+      margin-right: 2rem;
+    }
+  }
+  &__container2 {
+    display: flex;
+    &--img {
+      width: 85%;
+      margin: auto;
+    }
+  }
+}
