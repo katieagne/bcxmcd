@@ -2,6 +2,7 @@ import React from "react";
 import cart from "../../assets/icons/cart.svg";
 import signout from "../../assets/icons/user.svg";
 import search from "../../assets/icons/search.svg";
+import location from "../../assets/icons/location.svg";
 import McdsLogo from "../../assets/logos/McD-squareLogo 2.svg";
 import "./Navbar.scss";
 
@@ -32,12 +33,15 @@ function Navbar() {
           </div>
         </div>
         <div className="main__bottom">
-          <p>Menu</p>
-          <p>Nutrition</p>
-          <p>Rewards</p>
-          <p>McCafe</p>
-          <p>Family</p>
-          <p>Location</p>
+          <p className="main__bottom--inactive">Menu</p>
+          <p className="main__bottom--inactive">Nutrition</p>
+          <p className="main__bottom--active">Rewards</p>
+          <p className="main__bottom--inactive">McCafe</p>
+          <p className="main__bottom--inactive">Family</p>
+          <div className="location">
+            <img className="location__img" src={location} />
+            <p className="main__bottom--inactive">Toronto, ON</p>
+          </div>
         </div>
       </div>
     </section>
