@@ -15,4 +15,21 @@
     @include header;
     color: $text;
   }
+
+  &__card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 360px;
+    height: auto;
+    padding: 20px;
+  }
+  &__card-img {
+    @include shadow;
+    // background-image: url();
+    border-radius: 20px;
+  }
 }
